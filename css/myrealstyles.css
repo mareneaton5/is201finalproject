@@ -1,0 +1,61 @@
+ body {
+     background-color: lightblue;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ 
+ h1 {
+     color: orangered;
+     text-align: center;
+ }
+ 
+ .dance-quote {
+     color: darkviolet;
+     font-style: oblique;
+     font-weight: bolder;
+     text-align: justify;
+ }
+ 
+ .roles-list {
+     color: black;
+     font: helvetica;
+     font-style: normal;
+     float: right;
+ }
+ 
+ .slide {
+     display: none;
+     width: 100%;
+     transition: opacity 1s ease-in-out;
+ }
+ 
+ .slideshow-container {
+     max-width: 800px;
+     margin: 0 auto;
+     position: relative;
+     padding-bottom: 30px;
+ }
+ 
+ .slide {
+     display: none;
+     position: absolute;
+     width: 100%;
+     transition: opacity 1s ease-in-out;
+ }
+ 
+ .fade img {
+     width: 100%;
+     border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .video-footer {
+     margin-top: 60px;
+     padding: 20px 0;
+     text-align: center;
+ }
+ 
+ .video-footer iframe {
+     max-width: 90%;
+     border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ }
