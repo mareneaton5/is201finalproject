@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Things Dance</title>
+    <link rel="stylesheet" href="css/myrealstyles.css">
+</head>
+
+<body>
+    <h1>All Things Dance</h1>
+    <h2>Throughout my 17 years in dance, I’ve held many roles—performer, choreographer, team captain, teacher, and mentor. Each has shaped how I express, lead, and connect through movement.</h2>
+    <a class="nav-item"><a class="nav-link" href="index.html">Back to Home</a></a>
+    <br>
+    <a href="#my-anchor">My favorite dance pictures</a>
+    <div class="dance-quote">
+        <p class="quote-text">“Dance is the hidden language of the soul.” — Martha Graham</p>
+        <div class="roles-list">
+            <p class="roles-list">
+                <ol>
+                    <li>The Nutcracker</li>
+                    <li>
+                        <ul>
+                            <li>Sugar Plum Fairy</li>
+                            <li>Arabian Princess</li>
+                            <li>Snowflake</li>
+                        </ul>
+                    </li>
+                    <li>Jazz</li>
+                    <li>Contemporary</li>
+                    <li>Pointe</li>
+                    <li>A Christmas Carol</li>
+                    <li>
+                        <ul>
+                            <li>Mrs. Cratchit</li>
+                            <li>Door Knocker Scene</li>
+                            <li>Graveyard Scene</li>
+                        </ul>
+                    </li>
+
+                </ol>
+            </p>
+        </div>
+    </div>
+
+    <div class="video-footer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u0dWPsM0iT4?autoplay=1&mute=1&controls=0" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    </div>
+
+    <div id="my-anchor">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="assets/torches.PNG">
+            </div>
+            <div class="slide fade">
+                <img src="assets2/war_again.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="assets2/arabian_princess.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="assets/blue_leo.JPG">
+            </div>
+            <div class="slide fade">
+                <img src="assets/duet.JPG">
+            </div>
+            <div class="slide fade">
+                <img src="assets2/fabulous.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="assets2/firebird.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="assets2/pointe.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="assets2/war.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="assets2/sugar_plum_fairy.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="assets2/americano.jpg">
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let slides = document.getElementsByClassName("slide");
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    setTimeout(showSlides, 5000);
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
